@@ -6,7 +6,7 @@
 	"category": "widgets",
 	"description": "Add a custom description here.",
 	"attributes" : {
-		"markerColor": {
+		"presetMarkerColor": {
 			"type": "string"
 		},
 		"customMarkerColor": {

@@ -3,7 +3,7 @@ import { __ }            from '@wordpress/i18n';
 
 export default function Save( {
 	attributes: {
-		markerColor,
+		presetMarkerColor,
 		customMarkerColor
 	},
 	style
@@ -12,8 +12,8 @@ export default function Save( {
 	const blockProps = useBlockProps.save( {
 		style: {
 			...style,
-			'--devblog-list-marker': markerColor !== undefined
-			            ? `var( --wp--preset--color--${ markerColor } )`
+			'--devblog-list-marker': presetMarkerColor !== undefined
+			            ? `var( --wp--preset--color--${ presetMarkerColor } )`
 				    : customMarkerColor,
 		}
 	} );
