@@ -1,6 +1,3 @@
-/**
- * WordPress dependencies
- */
 import { __ } from "@wordpress/i18n";
 import {
 	__experimentalColorGradientSettingsDropdown as ColorGradientSettingsDropdown,
@@ -16,9 +13,6 @@ export default function markerColorDropdown(props) {
 		setAttributes,
 		clientId,
 	} = props;
-
-	console.log('markerColorDropdown');
-	console.log(props);
 
 	const colorValue = presetMarkerColor.color || customMarkerColor;
 	const onColorChange = (value) => {

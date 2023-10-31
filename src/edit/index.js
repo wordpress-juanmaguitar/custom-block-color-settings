@@ -7,15 +7,12 @@ import MarkerColorDropdown from "./markerColorDropdown.js";
 
 import { __ } from "@wordpress/i18n";
 
-const Edit = (props) => {
+const Edit = props => {
 	const {
 		attributes: { customMarkerColor },
 		presetMarkerColor,
 		style,
 	} = props;
-
-	console.log('edit');
-	console.log(props);
 
 	const blockProps = useBlockProps({
 		style: {
